@@ -46,11 +46,9 @@
 }
 
 .front{
-  transform: rotateY(0deg) translateZ(0.1px);
-  background: blue;
+  transform: rotateY(0deg) translateZ(2px) rotateX(90deg);
 }
 
 .back{
-  transform: rotateX(180deg)translateZ(0.1px);
-  background: green ;
+  transform: rotateX(-90deg) translateZ(2px);
 }

@@ -1,0 +1,87 @@
+.buzzwords {
+  position: absolute;
+  font-size: 33px;
+  font-family: 'Tahoma';
+  color: black;
+  height: 160px;
+  overflow-y: visible;
+}
+
+.gray{
+  background: whitesmoke;
+}
+.visible {
+  overflow-x: hidden;
+  height: 42px;
+  padding-left: 35px;
+  font-weight: 600;
+}
+.visible:before {
+  content: '<';
+  left: 0;
+  line-height: 41px;
+}
+
+.visible:after {
+  overflow-x: overlay;
+  content: '>';
+  position: fixed;
+  right: 0;
+  line-height: 41px;
+  z-index: 1;
+}
+.visible:after, .visible:before {
+  position: absolute;
+  top: 0;
+  color: red;
+  font-size: 40px;
+  animation: spin 14s linear infinite ;
+}
+
+p {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 10px;
+  width: 285px;
+  list-style: none;
+  animation: rotate 14s linear infinite ;
+}
+
+ul li {
+  line-height: 40px;
+  margin: 0;
+}
+li{
+  width: 240px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+@keyframes spin {
+ 0%, 12%,34%, 46%, 68%, 80%, 100% {
+            transform: rotateX(720deg);
+  }
+ 17%,29%,51%,63%,85%,97% {
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes rotate {
+  0%, 12%, 100% {
+            transform: translateY(0);
+  }
+  17%,29%,85%,97%  {
+            transform: translateY(-25%);
+  }
+  34%,46%,68%,80% {
+            transform: translateY(-50%);
+  }
+  51%,63% {
+            transform: translateY(-75%);
+  }
+}

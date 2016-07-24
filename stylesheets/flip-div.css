@@ -21,7 +21,7 @@
   background: red;
   opacity: 0.8;
   border: 2px solid black;
-  position: fixed;
+  position: absolute;
   box-shadow: 0 1px 10px 1px black;
   transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg);
 }
