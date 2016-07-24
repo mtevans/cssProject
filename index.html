@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./stylesheets/flip-div.css">
     <link rel="stylesheet" href="./stylesheets/buzzwords.css">
     <link rel="stylesheet" href="./stylesheets/zoombuttons.css">
+    <link rel="stylesheet" href="./stylesheets/pagelayout.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="./lib/bundle.js" charset="utf-8"></script>
   </head>
@@ -29,15 +30,6 @@
       <div class="corner"></div>
     </section>
 
-    <section class="zoom-buttons">
-      <div class="button1">
-        <span class="label">Close</span>
-        <span class="icon"> X</span>
-      </div>
-    </section>
-
-
-
     <div class"spacer">
       <div class="spacer">
 
@@ -45,22 +37,32 @@
     </div>
 
 
-    <div class="album-container">
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-      <div class="album"></div>
-    </div>
+    <span class="albums-animation">
+        <div class="album-container">
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+          <div class="album"></div>
+        </div>
+    </span>
 
 
+    <section class="zoom-buttons">
+      <div class="button1">
+        <span class="label">Close</span>
+        <span class="icon"> X</span>
+      </div>
+    </section>
+
+<div class="generic-span">
     <section class="example-one">
       <div class="rotating-cube1 rotate1" id=cube1>
 
@@ -78,9 +80,9 @@
         </div>
       </div>
     </section>
+</div>
 
-
-
+<div class="generic-span">
 <section class="example-two">
   <section class="flip-board">
     <div class="pillar pillar-right">
@@ -98,8 +100,9 @@
 
   </section>
 </section>
+</div>
 
-
+<div class="buzzcontainer">
 <div class='buzzwords'>
   <div class='visible'>
     <ul>
@@ -146,7 +149,7 @@
     </ul>
   </div>
 </div>
-
+</div>
 
 
 
