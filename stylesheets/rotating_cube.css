@@ -1,0 +1,85 @@
+.example-one{
+  height: 200px;
+  width: 200px;
+  perspective: 1000px;
+  position:relative;
+  top: 200px;
+  left: 500px;
+}
+
+
+@keyframes rotate-box1{
+  0%{
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100%{
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+.rotate1{
+  animation: rotate-box1 8s linear infinite;
+}
+
+.rotating-cube1{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.wall{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: blue;
+  opacity: 0.5;
+  border: 1px solid black;
+  transition: transform, .3s, translateZ;
+}
+
+.side-1{
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+.side-2{
+  transform: rotateX(90deg) translateZ(100px);
+
+}
+
+.side-3{
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.side-4{
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.side-5{
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.side-6{
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+
+.rotating-cube1:hover .side-1{
+      transform: rotateY(0deg) translateZ(200px);
+}
+
+.rotating-cube1:hover .side-2{
+      transform: rotateX(90deg) translateZ(200px);;
+}
+.rotating-cube1:hover .side-3{
+      transform: rotateY(90deg) translateZ(200px);
+}
+.rotating-cube1:hover .side-4{
+      transform: rotateX(-90deg) translateZ(200px);
+}
+.rotating-cube1:hover .side-5{
+      transform: rotateY(-90deg) translateZ(200px);
+  }
+.rotating-cube1:hover .side-6{
+    transform: rotateY(180deg) translateZ(200px);
+}
