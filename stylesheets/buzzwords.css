@@ -8,9 +8,6 @@
   overflow-y: visible;
 }
 
-.gray{
-  background: whitesmoke;
-}
 .visible {
   overflow: hidden;
   height: 42px;
@@ -32,11 +29,11 @@
   z-index: 1;
 }
 .visible:after, .visible:before {
-  position: absolute;
   top: 0;
+  position: absolute;
+  animation: spin 14s linear infinite ;
   color: red;
   font-size: 40px;
-  animation: spin 14s linear infinite ;
 }
 
 p {

@@ -1,11 +1,26 @@
+body{
+  background-image: url("../images/background.jpg");
+  font-family: 'Tahoma';
+}
+
 
 .zoom-buttons{
-  height: 400px;
+  height: 200px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: whitesmoke;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.buttons-second{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#cube-code{
+    margin: 40px auto;
 }
 
 .generic-span{
@@ -14,15 +29,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+
 }
 
 .buzzcontainer {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; 
+  width: 100%;
+  height: 305px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
 }
