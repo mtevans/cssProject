@@ -4,14 +4,12 @@
   font-family: 'Tahoma';
   color: black;
   height: 160px;
+  overflow: hidden;
   overflow-y: visible;
 }
 
-.gray{
-  background: whitesmoke;
-}
 .visible {
-  overflow-x: hidden;
+  overflow: hidden;
   height: 42px;
   padding-left: 35px;
   font-weight: 600;
@@ -31,11 +29,11 @@
   z-index: 1;
 }
 .visible:after, .visible:before {
-  position: absolute;
   top: 0;
+  position: absolute;
+  animation: spin 14s linear infinite ;
   color: red;
   font-size: 40px;
-  animation: spin 14s linear infinite ;
 }
 
 p {
@@ -50,6 +48,7 @@ ul {
   width: 285px;
   list-style: none;
   animation: rotate 14s linear infinite ;
+  overflow: hidden;
 }
 
 ul li {

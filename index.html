@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="./stylesheets/buzzwords.css">
     <link rel="stylesheet" href="./stylesheets/zoombuttons.css">
     <link rel="stylesheet" href="./stylesheets/pagelayout.css">
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="./lib/bundle.js" charset="utf-8"></script>
   </head>
   <body>
-
+    <nav class="nav-bar">
     <section class="outer">
     <!--  row 1  -->
       <div class="corner"></div>
@@ -22,21 +23,89 @@
       <div class="corner"></div>
     <!--   row 2 -->
       <div class="width-buff left"></div>
-      <a class='content'>Example</a>
+      <a class='content' href="#Photo-Display">Photo&nbsp;Display</a>
       <div class="width-buff right"></div>
     <!--  row 3  -->
       <div class="corner"></div>
         <div class="height-buff bottom"></div>
       <div class="corner"></div>
     </section>
+    <section class="outer">
+      <div class="corner"></div>
+      <div class="height-buff top"></div>
+      <div class="corner"></div>
+      <div class="width-buff left"></div>
+      <a class='content' href="#Buttons">Buttons</a>
+      <div class="width-buff right"></div>
+      <div class="corner"></div>
+      <div class="height-buff bottom"></div>
+      <div class="corner"></div>
+    </section>
+    <section class="outer">
+      <div class="corner"></div>
+      <div class="height-buff top"></div>
+      <div class="corner"></div>
+      <div class="width-buff left"></div>
+      <a class='content' href="#Kube">Kübe</a>
+      <div class="width-buff right"></div>
+      <div class="corner"></div>
+        <div class="height-buff bottom"></div>
+      <div class="corner"></div>
+    </section>
+    <section class="outer">
+      <div class="corner"></div>
+      <div class="height-buff top"></div>
+      <div class="corner"></div>
+      <div class="width-buff left"></div>
+      <a class='content' href="#Flipboard">Flipboard</a>
+      <div class="width-buff right"></div>
+      <div class="corner"></div>
+        <div class="height-buff bottom"></div>
+      <div class="corner"></div>
+    </section>
+    <section class="outer">
+      <div class="corner"></div>
+      <div class="height-buff top"></div>
+      <div class="corner"></div>
+      <div class="width-buff left"></div>
+      <a class='content' href="#Buzzwords">Buzzwords</a>
+      <div class="width-buff right"></div>
+      <div class="corner"></div>
+      <div class="height-buff bottom"></div>
+      <div class="corner"></div>
+    </section>
+    </nav>
 
-    <div class"spacer">
-      <div class="spacer">
-
-      </div>
-    </div>
 
 
+
+        <div class="info-box">
+          <div class="contact-details">
+              <div class="description-filler"></div>
+              <div class="the-text">
+                <p>my email in this</p>
+            </div>
+          </div>
+
+          <div class="description-box">
+            <div class="the-text">
+              <text>contoneontoner</text>
+            </div>
+            <div class="description-filler"></div>
+          </div>
+        </div>
+        <div class="rotator">Site&nbsp;Description</div>
+
+        <div class="spacer"><div class="spacer"></div></div>
+        <div class="spacer"><div class="spacer"></div></div>
+
+
+
+
+
+
+    <a name='Photo-Display'></a>
+    <h1 class="paint-heading">Photo Display</h1>
     <span class="albums-animation">
         <div class="album-container">
           <div class="album"></div>
@@ -52,35 +121,178 @@
           <div class="album"></div>
           <div class="album"></div>
         </div>
+
+        <div id="album-code" class="open-button">
+          <div class="part2"></div>
+          <div class="part1">
+            <div class="album-code-text theText">View Code</div>
+          </div>
+        </div>
+
+
+
+      <div class="album-code-ex expandingBox">
+        <div class="album-html">
+          <h1 class="code-title">HTML</h1>
+          <img src="./images/album-code/albums-html.png" alt="" />
+        </div>
+        <div class="album-css">
+            <h1 class="code-title">CSS</h1>
+          <img src="./images/album-code/albums-css.png" alt="" />
+        </div>
+        <div class="album-jQuery">
+            <h1 class="code-title">jQuery</h1>
+          <img src="./images/album-code/albums-jQuery.png" alt="" />
+        </div>
+      </div>
     </span>
 
+<a name='Buttons'></a>
+<h1 class="paint-heading">Button Animations</h1>
 
     <section class="zoom-buttons">
-      <div class="button1">
-        <span class="label">Close</span>
-        <span class="icon"> X</span>
+      <div class="underline-button">
+        <div class="button-name">
+            <a>Underline In</a>
+        </div>
+        <div class="underline">
+          <div class="box-right">
+          <div class="grow"></div>
+            <div class="shrink"></div>
+
+          </div>
+          <div class="box-left">
+            <div class="shrink"></div>
+            <div class="grow"></div>
+          </div>
+        </div>
       </div>
+
+      <div class="underline-button">
+        <div class="button-name">
+            <a>Underline Out</a>
+        </div>
+        <div class="underline">
+          <div class="box-right">
+            <div class="shrink"></div>
+            <div class="grow"></div>
+          </div>
+          <div class="box-left">
+            <div class="grow"></div>
+            <div class="shrink"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="example-button" class="open-button">
+        <div class="part2">
+        </div>
+        <div class="part1">
+          <div id="example-text" class="album-code">Color Slide</div>
+        </div>
+      </div>
+
+
     </section>
 
+    <div id="buttons1-code" class="open-button">
+      <div class="part2">
+      </div>
+      <div class="part1">
+        <div class="buttons1-code-text theText">View Code</div>
+      </div>
+    </div>
+
+
+  <div id="buttons1box" class="buttons1-code-ex expandingBox">
+    <div class="album-html">
+      <h1 class="code-title">HTML</h1>
+      <img src="./images/buttons1/buttons1-html.png" alt="" />
+    </div>
+    <div class="album-css">
+        <h1 class="code-title">CSS</h1>
+      <img src="./images/buttons1/buttons1-css.png" alt="" />
+    </div>
+  </div>
+  </span>
+
+
+
+<span class="buttons-second" >
+      <div class="button1">
+          <span class="label">Close</span>
+          <span class="icon"> X</span>
+      </div>
+
+        <section id="example-button" class="outer">
+          <div class="corner"></div>
+          <div id="example-top" class="height-buff top"></div>
+          <div  class="corner"></div>
+          <div id="example-left" class="width-buff left"></div>
+          <p id="example-content" class='content'>Borders</p>
+          <div id="example-right" class="width-buff right"></div>
+          <div  class="corner"></div>
+          <div id="example-bottom"class="height-buff bottom"></div>
+          <div class="corner"></div>
+        </section>
+</span>
+<div id="buttons2-code" class="open-button">
+  <div class="part2">
+  </div>
+  <div class="part1">
+    <div class="buttons2-code-text theText">View Code</div>
+  </div>
+</div>
+
+
+<div id="buttons2box" class="buttons2-code-ex expandingBox">
+<div class="album-html">
+  <h1 class="code-title">HTML</h1>
+  <img src="./images/buttons2/buttons2-html.png" alt="" />
+</div>
+<div class="album-css">
+    <h1 class="code-title">CSS</h1>
+  <img src="./images/buttons2/buttons2-css.png" alt="" />
+</div>
+</div>
+
+<a name='Kube'></a>
+<h1 class="paint-heading">Das Kübe</h1>
 <div class="generic-span">
     <section class="example-one">
       <div class="rotating-cube1 rotate1" id=cube1>
-
-        <div class="wall side-1">
-        </div>
-        <div class="wall side-2">
-        </div>
-        <div class="wall side-3">
-        </div>
-        <div class="wall side-4">
-        </div>
-        <div class="wall side-5">
-        </div>
-        <div class="wall side-6">
-        </div>
+        <div class="wall side-1"></div>
+        <div class="wall side-2"></div>
+        <div class="wall side-3"></div>
+        <div class="wall side-4"></div>
+        <div class="wall side-5"></div>
+        <div class="wall side-6"></div>
       </div>
     </section>
 </div>
+
+<div id="cube-code" class="open-button">
+  <div class="part2">
+  </div>
+  <div class="part1">
+    <div class="cube-code-text theText">View Code</div>
+  </div>
+</div>
+
+
+<div id="cubebox" class="cube-code-ex expandingBox">
+  <div class="album-html">
+    <h1 class="code-title">HTML</h1>
+    <img src="./images/cube/cube-html.png" alt="" />
+  </div>
+  <div class="album-css">
+      <h1 class="code-title">CSS</h1>
+    <img src="./images/cube/cube-css.png" alt="" />
+  </div>
+</div>
+
+<a name='Flipboard'></a>
+<h1 class="paint-heading">Flipboard Photo Show</h1>
 
 <div class="generic-span">
 <section class="example-two">
@@ -91,7 +303,6 @@
           <div class="surface front">
           </div>
           <div class="surface back">
-
           </div>
       </div>
 
@@ -102,55 +313,101 @@
 </section>
 </div>
 
-<div class="buzzcontainer">
+<div id="flipboard-code" class="open-button">
+  <div class="part2">
+  </div>
+  <div class="part1">
+    <div class="flipboard-code-text theText">View Code</div>
+  </div>
+</div>
+
+
+<div id="flipboardbox" class="flipboard-code-ex expandingBox">
+  <div class="album-html">
+    <h1 class="code-title">HTML</h1>
+    <img src="./images/flipboard/flipboard-html.png" alt="" />
+  </div>
+  <div class="album-css">
+      <h1 class="code-title">CSS</h1>
+    <img src="./images/flipboard/flipboard-css.png" alt="" />
+  </div>
+  <div class="album-jQuery">
+      <h1 class="code-title">jQuery</h1>
+      <img src="./images/flipboard/flipboard-jquery.png" alt="" />
+  </div>
+</div>
+
+
+<a name='Buzzwords'></a>
+<h1 class="paint-heading">Buzzwords on Buzzwords</h1>
+<div  class="buzzcontainer" >
 <div class='buzzwords'>
   <div class='visible'>
     <ul>
-      <li class="gray">Passionate</li>
-      <li>Determined</li>
-      <li class="gray">Likeable</li>
-      <li>Persistant</li>
-      <li class="gray">Agreeable</li>
-      <li>Courageous</li>
-      <li class="gray">Ambitious</li>
-      <li>Exuberant</li>
-      <li class="gray">Mature</li>
-      <li>Punctual</li>
-      <li class="gray">Reflective</li>
-      <li>Knowledgeable</li>
-      <li class="gray">Self-assured</li>
-      <li>Sincere</li>
-      <li class="gray">Unflappable</li>
-      <li>Successful</li>
-      <li class="gray">Hard Working</li>
-      <li>Persistant</li>
-      <li class="gray">Exuberant</li>
-      <li>Mature</li>
-      <li class="gray">Unflappable</li>
-      <li>Punctual</li>
-      <li class="gray">Reflective</li>
-      <li>Successful</li>
-      <li class="gray">Trustworthy</li>
-      <li>Vivacious</li>
-      <li class="gray">Amicable</li>
-      <li>Agreeable</li>
-      <li class="gray">Courageous</li>
-      <li>Trustworthy</li>
-      <li class="gray">Vivacious</li>
-      <li>Amicable</li>
-      <li class="gray">Upbeat</li>
       <li>Passionate</li>
-      <li class="gray">Determined</li>
+      <li>Determined</li>
+      <li>Likeable</li>
+      <li>Persistant</li>
+      <li>Agreeable</li>
+      <li>Courageous</li>
       <li>Ambitious</li>
-      <li class="gray">Upbeat</li>
+      <li>Exuberant</li>
+      <li>Mature</li>
+      <li>Punctual</li>
+      <li>Reflective</li>
+      <li>Knowledgeable</li>
+      <li>Self-assured</li>
+      <li>Sincere</li>
+      <li>Unflappable</li>
+      <li>Successful</li>
+      <li>Hard Working</li>
+      <li>Persistant</li>
+      <li>Exuberant</li>
+      <li>Mature</li>
+      <li>Unflappable</li>
+      <li>Punctual</li>
+      <li>Reflective</li>
+      <li>Successful</li>
+      <li>Trustworthy</li>
+      <li>Vivacious</li>
+      <li>Amicable</li>
+      <li>Agreeable</li>
+      <li>Courageous</li>
+      <li>Trustworthy</li>
+      <li>Vivacious</li>
+      <li>Amicable</li>
+      <li>Upbeat</li>
+      <li>Passionate</li>
+      <li>Determined</li>
+      <li>Ambitious</li>
+      <li>Upbeat</li>
       <li>Educated</li>
-      <li class="gray">Self-assured</li>
+      <li>Self-assured</li>
       <li>Sincere</li>
     </ul>
   </div>
 </div>
 </div>
 
+<div id="buzzwords-code" class="open-button">
+  <div class="part2">
+  </div>
+  <div class="part1">
+    <div class="buzzwords-code-text theText">View Code</div>
+  </div>
+</div>
+
+
+<div id="buzzwordsbox" class="buzzwords-code-ex expandingBox">
+  <div class="album-html">
+    <h1 class="code-title">HTML</h1>
+    <img src="./images/buzzwords/buzzwords-html.png" alt="" />
+  </div>
+  <div class="album-css">
+      <h1 class="code-title">CSS</h1>
+    <img src="./images/buzzwords/buzzwords-css.png" alt="" />
+  </div>
+</div>
 
 
 
