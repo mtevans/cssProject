@@ -29,7 +29,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .buzzcontainer {
@@ -40,4 +39,126 @@ body{
   align-items: flex-end;
   justify-content: center;
   overflow: hidden;
+  margin-top: -48px;
+}
+
+.paint-heading{
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  font-size: 63px;
+  color: antiquewhite;
+  text-shadow: 1px 1px black, 4px 4px gray;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.info-box{
+  height: 400px;
+  width: 810px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 0px;
+  position: relative;
+  left: 155px;
+  top: 116px;
+}
+
+.description-box{
+  margin: 50px auto;
+  height: 200px;
+  width: 530px;
+  background: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.contact-details{
+  margin: 50px auto;
+  height: 200px;
+  width: 200px;
+  background: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.the-text{
+  height: 100%;
+  width: 0%;
+  display: flex;
+  postition: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background:red;
+  transition: width 0.8s 0.5s;
+}
+
+.description-filler, .contact-filler{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: transparent;
+  transition: width 0.8s .5s;
+}
+
+.rotator{
+  position: relative;
+  height: 37px;
+  width: 250px;
+  font-size: 25px;
+  text-align: center;
+  margin: -158px auto;
+  color: black;
+  font-family: 'Rock Salt', cursive;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.rotator:hover{
+  text-decoration: underline;
+}
+
+.start-rotate{
+  animation: turn-ninety linear 0.5s forwards
+}
+
+@keyframes turn-ninety{
+  0%{
+    transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(90deg)
+  }
+}
+
+.rotate-back{
+   animation: back-ninety linear 2s forwards;
+}
+
+@keyframes back-ninety{
+  0%{
+    transform: rotate(90deg)
+    }
+  59%{
+    transform: rotate(90deg)
+  }
+  100%{
+    transform: rotate(0deg)
+   }
+}
+
+
+.info-container{
+  width: 1000px
 }

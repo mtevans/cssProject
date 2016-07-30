@@ -61,7 +61,7 @@
 }
 
 .outer:hover > .top{
-  animation: rotate-top 0.8s ease-out forwards;
+  animation: rotate-top 0.5s ease-out forwards;
 }
 
 
@@ -78,7 +78,7 @@
 }
 
 .outer:hover > .left{
-   animation: rotate-left 0.8s ease-out forwards;
+   animation: rotate-left 0.5s ease-out forwards;
 }
 
 
@@ -96,7 +96,7 @@
 }
 
 .outer:hover > .right{
-  animation: rotate-right 0.8s ease-out forwards;
+  animation: rotate-right 0.5s ease-out forwards;
 }
 
 @keyframes rotate-bottom{
@@ -115,5 +115,5 @@
 
 .outer:hover > .bottom{
   border-bottom: 0px solid white;
-  animation: rotate-bottom 0.8s ease-out forwards;
+  animation: rotate-bottom 0.5s ease-out forwards;
 }
