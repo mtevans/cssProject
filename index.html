@@ -77,19 +77,41 @@
     </nav>
 
 
+  <div class="sidebar">
+    <div class="sidebar-content">
+      <div class="links">
+        <h3>Codepen&#x2011;Links</h3>
+            <a href="http://codepen.io/StayingAnonymous/pen/ZOoYBW">Album&nbspDisplay</a><br>
+            <a href="http://codepen.io/StayingAnonymous/pen/mEjQoA">All The Buttons</a><br>
+            <a href="http://codepen.io/StayingAnonymous/pen/dXjwyG">Rotating Cube</a><br>
+            <a href="https://codepen.io/StayingAnonymous/pen/GqdWKx">Flipboard Photo</a><br>
+            <a href="https://codepen.io/StayingAnonymous/pen/XKqrEr">Buzzword Scroll</a><br>
+      </div>
+    </div>
+  <div class="trigger">Side-Bar</div>
+</div>
+
+
 
 
         <div class="info-box">
           <div class="contact-details">
               <div class="description-filler"></div>
-              <div class="the-text">
-                <p>my email in this</p>
+              <div id="contact" class="the-text">
+                <a  href="http://github.com/mtevans/cssProject/"><img class="github-icon" src="./images/github-icon.png" /></a>
+
+                <a class="email-icon" href="mailto:mtevans90@gmail.com">@</a>
+                <p class="email-address" href="mailto:mtevans90@gmail.com">mtevans90@gmail.com</p>
+
             </div>
           </div>
 
           <div class="description-box">
             <div class="the-text">
-              <text>contoneontoner</text>
+              <text class="description-text-box">This site is a CSS demo page. All of the animations you see on this page were made through
+                 a combination of jQuery, html and raw css( no plugins and no external libraries)
+                 The code snippets represent the core styling properties necessary to achieve these effects
+                although on the sidebar there are links to my CodePen posts that display the code in its entirity.</text>
             </div>
             <div class="description-filler"></div>
           </div>
@@ -108,18 +130,21 @@
     <h1 class="paint-heading">Photo Display</h1>
     <span class="albums-animation">
         <div class="album-container">
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
-          <div class="album"></div>
+
+
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-3.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-4.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-5.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-6.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-7.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-8.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-9.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-10.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-11.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-12.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-13.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-14.jpg"/></div>
+          <div class="album"><img class="album-image" src="./images/display-pics/pic-15.jpg"/></div>
         </div>
 
         <div id="album-code" class="open-button">
@@ -148,7 +173,7 @@
     </span>
 
 <a name='Buttons'></a>
-<h1 class="paint-heading">Button Animations</h1>
+<h1 class="paint-heading">Button Hover Animations</h1>
 
     <section class="zoom-buttons">
       <div class="underline-button">
@@ -300,10 +325,10 @@
     <div class="pillar pillar-right">
     </div>
       <div class="board board-flip">
-          <div class="surface front">
+          <div class="surface front"><div class="image-front"></div>
           </div>
-          <div class="surface back">
-          </div>
+          <div class="surface back"><div class="image-back"></div>
+        </div>
       </div>
 
     <div class="pillar pillar-left">
@@ -339,7 +364,7 @@
 
 
 <a name='Buzzwords'></a>
-<h1 class="paint-heading">Buzzwords on Buzzwords</h1>
+<h1 class="paint-heading">Buzzword Scroll</h1>
 <div  class="buzzcontainer" >
 <div class='buzzwords'>
   <div class='visible'>
