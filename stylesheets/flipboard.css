@@ -25,6 +25,16 @@
     perspective: 1000px;
 }
 
+.image-front{
+  height: 100%;
+  width: 100%;
+}
+
+.image-back{
+  height: 100%;
+  width: 100%;
+}
+
 .pillar{
   height:60%;
   width:10px;

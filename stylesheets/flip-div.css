@@ -15,10 +15,7 @@
   margin-left: 200px;
 }
 
-.image-front, .image-back{
-  height: 100%;
-  width: 100%;
-}
+
 
 .album{
   border-radius: 4px;
@@ -47,7 +44,7 @@
     z-index:1;
     width:300px;
     height: 260px;
-    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateX(5px) ;
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateX(5px);
   }
 }
 
@@ -64,9 +61,6 @@
   border: 2px solid white;
 }
 
-
-
-/*1000px*/
 
 .expandingBox {
   width: 100%;
