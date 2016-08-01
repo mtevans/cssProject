@@ -197,6 +197,14 @@ body{
   overflow: hidden;
 }
 
+.sidebar-links{
+  text-decoration: underline;
+}
+.sidebar-links:hover{
+  color: darksalmon;
+}
+
+
 .trigger{
   width: 150px;
   height: 30px;
