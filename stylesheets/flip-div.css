@@ -6,12 +6,18 @@
 
 .album-container{
   height: 250px;
-  width: 1020px;
-  background: rgba(255, 255, 255, 0.39);
+  width: 100%;
   display: flex;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   flex-direction: row;
+  margin-left: 200px;
+}
+
+.image-front, .image-back{
+  height: 100%;
+  width: 100%;
 }
 
 .album{
@@ -19,11 +25,10 @@
   margin-top: 90px;
   height: 200px;
   width: 270px;
-  background: red;
-  opacity: 0.8;
+  opacity: 1;
   border: 2px solid black;
   position: absolute;
-  margin: 42px;
+  margin: 0px 0 0 0;
   box-shadow: 0 1px 10px 1px black;
   transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg);
 }
@@ -36,12 +41,12 @@
   }
   30%{
     z-index:1;
-    transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg) translateX(-163px);
+    transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg) translateX(-235px);
   }
   100%{
     z-index:1;
     width:300px;
-    height: 230px;
+    height: 260px;
     transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateX(5px) ;
   }
 }
@@ -150,9 +155,6 @@ img{
 }
 
 
-
-
-
 .theText{
   position: absolute;
   top: 24%;
@@ -164,4 +166,9 @@ img{
 
 .open-button:hover .theText{
   color: white;
+}
+
+.album-image{
+  height: 100%;
+  width: 100%;
 }
