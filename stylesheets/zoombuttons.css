@@ -24,7 +24,9 @@
   border-right: 1px solid;
   overflow: hidden;
   position: relative;
-  transition: height, width, position, .5s
+  -webkit-transition: height, width, position, 500ms;
+  -moz-transition: height, width, position, 500ms;
+  transition: height, width, position, 500ms;
 }
 
 .icon{
@@ -32,7 +34,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: height, width, font-size, .5s;
+  -webkit-transition: height, width, font-size, 500ms;
+  -moz-transition: height, width, font-size, 500ms;
+  transition: height, width, font-size, 500ms;
 }
 
 .button1:hover .icon{
@@ -87,12 +91,16 @@
   width: 0%;
   height: 100%;
   background: white;
-  transition: width 0.75s;
+  -webkit-transition: width 750ms;
+  -moz-transition: width 750ms;
+  transition: width 750ms;
 }
 .shrink{
   width: 100%;
   height: 100%;
-  transition: width 0.75s;
+  -webkit-transition: width 750ms;
+  -moz-transition: width 750ms;
+  transition: width 750ms;
 }
 
 .underline-button:hover .shrink{
@@ -116,6 +124,7 @@
   border: 0;
   border-radius: 4px;
 }
+
 #example-button:active{
   box-shadow: 0 0 0 0 gray;
 }
@@ -125,14 +134,40 @@
   position: absolute;
   font-size: 20px;
   margin: 0;
-  transition: color 0.7s;
   color: white;
   font-size: 18px;
   top: 31%;
   left: 25%;
   text-shadow: 0.5px 0.5px black;
+  -webkit-transition: color 700ms;
+  -moz-transition: color 700ms;
+  transition: color 700ms;
 }
 
+
+@-webkit-keyframes e-rotate-top{
+  0%{
+    border-top: 0px solid black;
+    -webkit-transform: rotateX(0deg) translateZ(0);
+  }
+
+  100%{
+    -webkit-transform: rotateX(33deg) translateZ(-79px);
+    border-top: 3px solid black;
+  }
+}
+
+@-moz-keyframes e-rotate-top{
+  0%{
+    border-top: 0px solid black;
+    -moz-transform: rotateX(0deg) translateZ(0);
+  }
+
+  100%{
+    transform: rotateX(33deg) translateZ(-79px);
+    -moz-border-top: 3px solid black;
+  }
+}
 
 @keyframes e-rotate-top{
   0%{
@@ -145,11 +180,36 @@
     border-top: 3px solid black;
   }
 }
-
 #example-button:hover > #example-top{
-  animation: e-rotate-top 0.5s ease-out forwards;
+  -webkit-animation: e-rotate-top 500ms ease-out forwards;
+  -moz-animation: e-rotate-top 500ms ease-out forwards;
+  animation: e-rotate-top 500ms ease-out forwards;
 }
 
+
+@-webkit-keyframes e-rotate-left{
+  0%{
+    border-left: 0px solid black;
+    -webkit-transform: rotateY(0deg) translateZ(0);
+  }
+
+  100%{
+    -webkit-transform: rotateY(-32deg) translateZ(-210px);
+    border-left: 3px solid black;
+  }
+}
+
+@-moz-keyframes e-rotate-left{
+  0%{
+    border-left: 0px solid black;
+    -moz-transform: rotateY(0deg) translateZ(0);
+  }
+
+  100%{
+    -moz-transform: rotateY(-32deg) translateZ(-210px);
+    border-left: 3px solid black;
+  }
+}
 
 @keyframes e-rotate-left{
   0%{
@@ -164,10 +224,35 @@
 }
 
 #example-button:hover > #example-left{
+   -webkit-animation: e-rotate-left 0.5s ease-out forwards;
+   -moz-animation: e-rotate-left 0.5s ease-out forwards;
    animation: e-rotate-left 0.5s ease-out forwards;
 }
 
 
+
+@-webkit-keyframes e-rotate-right{
+  0%{
+    border-right: 0px solid black;
+    -webkit-transform: rotateY(0deg) translateZ(0);
+  }
+
+  100%{
+    -webkit-transform: rotateY(-32.8deg) translateZ(212px);
+    border-right: 3px solid black;
+  }
+}
+@-moz-keyframes e-rotate-right{
+  0%{
+    border-right: 0px solid black;
+    -moz-transform: rotateY(0deg) translateZ(0);
+  }
+
+  100%{
+    -moz-transform: rotateY(-32.8deg) translateZ(212px);
+    border-right: 3px solid black;
+  }
+}
 
 @keyframes e-rotate-right{
   0%{
@@ -182,7 +267,33 @@
 }
 
 #example-button:hover > #example-right{
-  animation: e-rotate-right 0.5s ease-out forwards;
+  -webkit-animation: e-rotate-right 500ms ease-out forwards;
+  -moz-animation: e-rotate-right 500ms ease-out forwards;
+  animation: e-rotate-right 500ms ease-out forwards;
+}
+
+@-webkit-keyframes e-rotate-bottom{
+  0%{
+    border-top: 0px solid black;
+    -webkit-transform: rotateX(0deg) translateZ(0);
+  }
+
+  100%{
+    -webkit-transform: rotateX(32deg) translateZ(61px);
+    border-top: 3px solid black;
+  }
+}
+
+@-moz-keyframes e-rotate-bottom{
+  0%{
+    border-top: 0px solid black;
+    -moz-transform: rotateX(0deg) translateZ(0);
+  }
+
+  100%{
+    -moz-transform: rotateX(32deg) translateZ(61px);
+    border-top: 3px solid black;
+  }
 }
 
 @keyframes e-rotate-bottom{
@@ -205,5 +316,7 @@
 
 #example-button:hover > #example-bottom{
   border-bottom: 0px solid black;
-  animation: e-rotate-bottom 0.5s ease-out forwards;
+  -webkit-animation: e-rotate-bottom 500ms ease-out forwards;
+  -moz-animation: e-rotate-bottom 500ms ease-out forwards;
+  animation: e-rotate-bottom 500ms ease-out forwards;
 }
