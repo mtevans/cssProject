@@ -31,9 +31,11 @@
 .visible:after, .visible:before {
   top: 0;
   position: absolute;
-  animation: spin 14s linear infinite ;
   color: red;
   font-size: 40px;
+  animation: spin 14000ms linear infinite ;
+  -webkit-animation: spin 14000ms linear infinite ;
+  -moz-animation: spin 14000ms linear infinite ;
 }
 
 p {
@@ -47,8 +49,10 @@ ul {
   padding-left: 10px;
   width: 285px;
   list-style: none;
-  animation: rotate 14s linear infinite ;
   overflow: hidden;
+  animation: rotate 14000ms linear infinite;
+  -webkit-animation: rotate 14000ms linear infinite;
+  -moz-animation: rotate 14000ms linear infinite;
 }
 
 ul li {
@@ -70,6 +74,24 @@ li{
   }
 }
 
+@-webkit-keyframes spin {
+ 0%, 12%,34%, 46%, 68%, 80%, 100% {
+            -webkit-transform: rotateX(720deg);
+  }
+ 17%,29%,51%,63%,85%,97% {
+            -webkit-transform: rotateX(0deg);
+  }
+}
+
+@-moz-keyframes spin {
+ 0%, 12%,34%, 46%, 68%, 80%, 100% {
+            -moz-transform: rotateX(720deg);
+  }
+ 17%,29%,51%,63%,85%,97% {
+            -moz-transform: rotateX(0deg);
+  }
+}
+
 @keyframes rotate {
   0%, 12%, 100% {
             transform: translateY(0);
@@ -82,5 +104,34 @@ li{
   }
   51%,63% {
             transform: translateY(-75%);
+  }
+}
+@-webkit-keyframes rotate {
+  0%, 12%, 100% {
+            -webkit-transform: translateY(0);
+  }
+  17%,29%,85%,97%  {
+            -webkit-transform: translateY(-25%);
+  }
+  34%,46%,68%,80% {
+            -webkit-transform: translateY(-50%);
+  }
+  51%,63% {
+            -webkit-transform: translateY(-75%);
+  }
+}
+
+@-moz-keyframes rotate {
+  0%, 12%, 100% {
+            -moz-transform: translateY(0);
+  }
+  17%,29%,85%,97%  {
+            -moz-transform: translateY(-25%);
+  }
+  34%,46%,68%,80% {
+            -moz-transform: translateY(-50%);
+  }
+  51%,63% {
+            -moz-transform: translateY(-75%);
   }
 }

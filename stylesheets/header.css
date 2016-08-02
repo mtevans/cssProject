@@ -48,6 +48,30 @@
     align-items: center;
 }
 
+
+@-webkit-keyframes rotate-top{
+  0%{
+    border-top: 0px solid white;
+    -webkit-transform: rotateX(0deg) translateZ(0);
+  }
+
+  100%{
+    -webkit-transform: rotateX(45deg) translateZ(-79px);
+    border-top: 3px solid white;
+  }
+}
+@-moz-keyframes rotate-top{
+  0%{
+    border-top: 0px solid white;
+    -moz-transform: rotateX(0deg) translateZ(0);
+  }
+
+  100%{
+    -moz-transform: rotateX(45deg) translateZ(-79px);
+    border-top: 3px solid white;
+  }
+}
+
 @keyframes rotate-top{
   0%{
     border-top: 0px solid white;
@@ -59,11 +83,38 @@
     border-top: 3px solid white;
   }
 }
-
 .outer:hover > .top{
-  animation: rotate-top 0.5s ease-out forwards;
+  -webkit-animation: rotate-top 500ms ease-out forwards;
+  -moz-animation: rotate-top 500ms ease-out forwards;
+  animation: rotate-top 500ms ease-out forwards;
 }
 
+
+
+
+@-webkit-keyframes rotate-left{
+  0%{
+    border-left: 0px solid white;
+    -webkit-transform: rotateY(0deg) translateZ(0);
+  }
+
+  100%{
+    -webkit-transform: rotateY(-37.5deg) translateZ(-210px);
+    border-left: 3px solid white;
+  }
+}
+
+@-moz-keyframes rotate-left{
+  0%{
+    border-left: 0px solid white;
+    -moz-transform: rotateY(0deg) translateZ(0);
+  }
+
+  100%{
+    -moz-transform: rotateY(-37.5deg) translateZ(-210px);
+    border-left: 3px solid white;
+  }
+}
 
 @keyframes rotate-left{
   0%{
@@ -78,10 +129,37 @@
 }
 
 .outer:hover > .left{
-   animation: rotate-left 0.5s ease-out forwards;
+   -webkit-animation: rotate-left 500ms ease-out forwards;
+   -moz-animation: rotate-left 500ms ease-out forwards;
+   animation: rotate-left 500ms ease-out forwards;
 }
 
 
+
+
+@-webkit-keyframes rotate-right{
+  0%{
+    border-right: 0px solid white;
+    -webkit-transform: rotateY(0deg) translateZ(0);
+  }
+
+  100%{
+    -webkit-transform: rotateY(-37.5deg) translateZ(212px);
+    border-right: 3px solid white;
+  }
+}
+
+@-moz-keyframes rotate-right{
+  0%{
+    border-right: 0px solid white;
+    -moz-transform: rotateY(0deg) translateZ(0);
+  }
+
+  100%{
+    -moz-transform: rotateY(-37.5deg) translateZ(212px);
+    border-right: 3px solid white;
+  }
+}
 
 @keyframes rotate-right{
   0%{
@@ -96,7 +174,33 @@
 }
 
 .outer:hover > .right{
-  animation: rotate-right 0.5s ease-out forwards;
+  -webkit-animation: rotate-right 500ms ease-out forwards;
+  -moz-animation: rotate-right 500ms ease-out forwards;
+  animation: rotate-right 500ms ease-out forwards;
+}
+
+
+@-webkit-keyframes rotate-bottom{
+  0%{
+    border-top: 0px solid white;
+    -webkit-transform: rotateX(0deg) translateZ(0);
+  }
+
+  100%{
+    -webkit-transform: rotateX(45deg) translateZ(61px);
+    border-top: 3px solid white;
+  }
+}
+@-moz-keyframes rotate-bottom{
+  0%{
+    border-top: 0px solid white;
+    -moz-transform: rotateX(0deg) translateZ(0);
+  }
+
+  100%{
+    -moz-transform: rotateX(45deg) translateZ(61px);
+    border-top: 3px solid white;
+  }
 }
 
 @keyframes rotate-bottom{
@@ -112,8 +216,9 @@
 }
 
 
-
 .outer:hover > .bottom{
   border-bottom: 0px solid white;
-  animation: rotate-bottom 0.5s ease-out forwards;
+  -webkit-animation: rotate-bottom 500ms ease-out forwards;
+  -moz-animation: rotate-bottom 500ms ease-out forwards;
+  animation: rotate-bottom 500ms ease-out forwards;
 }

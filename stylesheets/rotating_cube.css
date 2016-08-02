@@ -2,6 +2,8 @@
   height: 200px;
   width: 200px;
   perspective: 1000px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
   position:relative;
 
 }
@@ -15,6 +17,23 @@
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
+@-webkit-keyframes rotate-box1{
+  0%{
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+  }
+  100%{
+    -webkit-transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+@-moz-keyframes rotate-box1{
+  0%{
+    -moz-transform: rotateY(0deg) rotateX(0deg);
+  }
+  100%{
+    -moz-transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
 @keyframes rotate-box2{
   0%{
     transform: rotateY(0deg) rotateX(0deg);
@@ -23,11 +42,34 @@
     transform: rotateY(-360deg) rotateX(-360deg);
   }
 }
+
+@-webkit-keyframes rotate-box2{
+  0%{
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+  }
+  100%{
+    -webkit-transform: rotateY(-360deg) rotateX(-360deg);
+  }
+}
+@-moz-keyframes rotate-box2{
+  0%{
+    -moz-transform: rotateY(0deg) rotateX(0deg);
+  }
+  100%{
+    -moz-transform: rotateY(-360deg) rotateX(-360deg);
+  }
+}
+
+
 .rotate2{
-  animation: rotate-box2 8s linear infinite;
+  -webkit-animation: rotate-box2 8000ms linear infinite;
+  -moz-animation: rotate-box2 8000ms linear infinite;
+  animation: rotate-box2 8000ms linear infinite;
 }
 .rotate1{
-  animation: rotate-box1 8s linear infinite;
+  -webkit-animation: rotate-box1 8000ms linear infinite;
+  -moz-animation: rotate-box1 8000ms linear infinite;
+  animation: rotate-box1 8000ms linear infinite;
 }
 
 
@@ -36,6 +78,8 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
@@ -46,52 +90,77 @@
   opacity: 0.9;
   border: 1px solid black;
   cursor: pointer;
-  transition: transform, .3s, translateZ;
+  -webkit-transition: -webkit-transform 300ms ease 0ms;
+  -moz-transition: -moz-transform 300ms ;
+  transition: transform 300ms ease 0ms ;
 }
 
 .side-1{
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+  -moz-transform: rotateY(0deg) translateZ(100px);
   transform: rotateY(0deg) translateZ(100px);
 }
 
 .side-2{
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateX(90deg) translateZ(100px);
   transform: rotateX(90deg) translateZ(100px);
-
 }
 
 .side-3{
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
   transform: rotateY(90deg) translateZ(100px);
 }
 
 .side-4{
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+  -moz-transform: rotateX(-90deg) translateZ(100px);
   transform: rotateX(-90deg) translateZ(100px);
 }
 
 .side-5{
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) translateZ(100px);
   transform: rotateY(-90deg) translateZ(100px);
 }
 
 .side-6{
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+  -moz-transform: rotateY(180deg) translateZ(100px);
   transform: rotateY(180deg) translateZ(100px);
 }
 
 
 .rotating-cube1:hover .side-1{
-      transform: rotateY(0deg) translateZ(200px);
+    -webkit-transform: rotateY(0deg) translateZ(200px);
+    -moz-transform: rotateY(0deg) translateZ(200px);
+    transform: rotateY(0deg) translateZ(200px);
 }
 
 .rotating-cube1:hover .side-2{
-      transform: rotateX(90deg) translateZ(200px);;
+    -webkit-transform: rotateX(90deg) translateZ(200px);
+    -moz-transform: rotateX(90deg) translateZ(200px);
+    transform: rotateX(90deg) translateZ(200px);
 }
 .rotating-cube1:hover .side-3{
-      transform: rotateY(90deg) translateZ(200px);
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+    -moz-transform: rotateY(90deg) translateZ(200px);
+    transform: rotateY(90deg) translateZ(200px);
 }
 .rotating-cube1:hover .side-4{
-      transform: rotateX(-90deg) translateZ(200px);
+    -webkit-transform: rotateX(-90deg) translateZ(200px);
+    -moz-transform: rotateX(-90deg) translateZ(200px);
+    transform: rotateX(-90deg) translateZ(200px);
 }
 .rotating-cube1:hover .side-5{
-      transform: rotateY(-90deg) translateZ(200px);
+    -webkit-transform: rotateY(-90deg) translateZ(200px);
+    -moz-transform: rotateY(-90deg) translateZ(200px);
+    transform: rotateY(-90deg) translateZ(200px);
   }
 .rotating-cube1:hover .side-6{
+    -webkit-transform: rotateY(180deg) translateZ(200px);
+    -moz-transform: rotateY(180deg) translateZ(200px);
     transform: rotateY(180deg) translateZ(200px);
 }
 

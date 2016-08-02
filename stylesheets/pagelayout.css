@@ -1,6 +1,8 @@
 body{
   background-image: url("../images/background.jpg");
   font-family: 'Tahoma';
+  z-index: 0;
+  position: relative;
 }
 
 
@@ -99,7 +101,9 @@ a{
   color: white;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.7);
-  transition: width 0.8s 0.5s;
+  -webkit-transition: width 800ms 500ms;
+  -moz-ransition: width 800ms 500ms;
+  transition: width 800ms 500ms;
 }
 
 .description-filler, .contact-filler{
@@ -110,7 +114,9 @@ a{
   align-items: center;
   overflow: hidden;
   background: transparent;
-  transition: width 0.8s .5s;
+  -webkit-transition: width 800ms 500ms;
+  -moz-transition: width 800ms 500ms;
+  transition: width 800ms 500ms;
 }
 
 .rotator{
@@ -131,7 +137,27 @@ a{
 }
 
 .start-rotate{
-  animation: turn-ninety linear 0.5s forwards;
+  -webkit-animation: turn-ninety linear 500ms forwards;
+  -moz-animation: turn-ninety linear 500ms forwards;
+  animation: turn-ninety linear 500ms forwards;
+}
+
+@-webkit-keyframes turn-ninety{
+  0%{
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+@-moz-keyframes turn-ninety{
+  0%{
+    -moz-transform: rotate(0deg);
+  }
+  100%{
+    -moz-transform: rotate(90deg);
+  }
 }
 
 @keyframes turn-ninety{
@@ -144,9 +170,33 @@ a{
 }
 
 .rotate-back{
-   animation: back-ninety linear 2s forwards;
+   -webkit-animation: back-ninety linear 2000ms forwards;
+   -moz-animation: back-ninety linear 2000ms forwards;
+   animation: back-ninety linear 2000ms forwards;
 }
 
+@-webkit-keyframes back-ninety{
+  0%{
+    -webkit-transform: rotate(90deg);
+    }
+  59%{
+    -webkit-transform: rotate(90deg);
+  }
+  100%{
+    -webkit-transform: rotate(0deg);
+   }
+}
+@-moz-keyframes back-ninety{
+  0%{
+    -moz-transform: rotate(90deg);
+    }
+  59%{
+    -moz-transform: rotate(90deg);
+  }
+  100%{
+    -moz-transform: rotate(0deg);
+   }
+}
 @keyframes back-ninety{
   0%{
     transform: rotate(90deg);
@@ -158,7 +208,6 @@ a{
     transform: rotate(0deg);
    }
 }
-
 
 .info-container{
   width: 1000px;
@@ -182,10 +231,12 @@ body{
   justify-content: start;
   align-items: center;
   background: transparent;
-  transition: width 0.5s;
   position: fixed;
   margin-top: 100px;
   z-index: 2;
+  -webkit-transition: width 500ms;
+  -moz-transition: width 500ms;
+  transition: width 500ms;
 }
 
 .sidebar-content{
@@ -193,9 +244,11 @@ body{
   width: 0px;
   background: rgba(0, 0, 0, 0.56);
   color: white;
-  transition: width 0.5s;
   overflow: hidden;
-  z-index: 2
+  z-index: 2;
+  -webkit-transition: width 500ms;
+  -moz-transition: width 500ms;
+  transition: width 500ms;
 }
 
 .sidebar-links{
@@ -210,7 +263,6 @@ body{
   width: 150px;
   height: 30px;
   background: #980808;
-  transform: rotate(90deg);
   border-radius: 15px 15px 0 0;
   box-shadow: 0 -1px 2px 1px black;
   cursor: pointer;
@@ -220,6 +272,9 @@ body{
   justify-content: center;
   font-size: 20px;
   z-index: 2;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .trigger:hover{
@@ -241,7 +296,7 @@ body{
   color: transparent;
 }
 
-.email-icon:hover ~ .email-address{
+.email-icon:hover + .email-address{
   color: white;
 }
 
@@ -265,7 +320,17 @@ body{
   color: transparent;
 }
 
+.github-icon-link{
+  height: 35px;
+  width: 35px;
+}
 
-.github-icon:hover ~ .github-address{
+.github-icon-link:hover + .github-address{
   color: white;
+}
+
+.checkone{
+  height: 1000px;
+  background: green;
+  text-decoration: overline;
 }
