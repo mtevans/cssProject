@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./stylesheets/buzzwords.css">
     <link rel="stylesheet" href="./stylesheets/zoombuttons.css">
     <link rel="stylesheet" href="./stylesheets/pagelayout.css">
+    <link rel="stylesheet" href="./stylesheets/parallax.css">
     <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script type="text/javascript" src="./lib/entry.js" charset="utf-8"></script>
@@ -86,6 +87,7 @@
             <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/dXjwyG">Rotating Cube</a><br>
             <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/GqdWKx">Flipboard Photo</a><br>
             <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/XKqrEr">Buzzword Scroll</a><br>
+            <a class="sidebar-links" href="http://codepen.io/StayingAnonymous/pen/NALrJO">Paralax Scrolling</a><br>
       </div>
     </div>
   <div class="trigger">Side-Bar</div>
@@ -118,12 +120,16 @@
           </div>
         </div>
         <div class="rotator">Site&nbsp;Description</div>
+        <p class="shadow">Please Click Me</p>
 
         <div class="spacer"><div class="spacer"></div></div>
         <div class="spacer"><div class="spacer"></div></div>
 
 
-
+        <div id="pic-3" class="parent-container paralax-pic">
+          <div class="child-container">
+          </div>
+        </div>
 
 
 
@@ -172,6 +178,11 @@
         </div>
       </div>
     </span>
+
+    <div id="pic-1" class="parent-container paralax-pic">
+      <div class="child-container">
+      </div>
+    </div>
 
 <a name='Buttons'></a>
 <h1 class="paint-heading">Button Hover Animations</h1>
@@ -282,6 +293,11 @@
 </div>
 </div>
 
+<div id="pic-5" class="parent-container paralax-pic">
+  <div class="child-container">
+  </div>
+</div>
+
 <a name='Kube'></a>
 <h1 class="paint-heading">The Kübe</h1>
 <div class="generic-span">
@@ -326,6 +342,12 @@
     <img src="./images/cube/cube-css.png" alt="" />
   </div>
 </div>
+
+<div id="pic-4" class="parent-container paralax-pic">
+  <div class="child-container">
+  </div>
+</div>
+
 
 <a name='Flipboard'></a>
 <h1 class="paint-heading">Flipboard Photo Show</h1>
@@ -373,6 +395,10 @@
   </div>
 </div>
 
+<div id="pic-2" class="parent-container paralax-pic">
+  <div class="child-container">
+  </div>
+</div>
 
 <a name='Buzzwords'></a>
 <h1 class="paint-heading">Buzzword Scroll</h1>
@@ -444,8 +470,6 @@
     <img src="./images/buzzwords/buzzwords-css.png" alt="" />
   </div>
 </div>
-
-
 
   </body>
 </html>

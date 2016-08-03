@@ -130,10 +130,12 @@ a{
   font-family: 'Rock Salt', cursive;
   border-radius: 7px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .rotator:hover{
   text-decoration: underline;
+  font-size: 26px;
 }
 
 .start-rotate{
@@ -333,4 +335,20 @@ body{
   height: 1000px;
   background: green;
   text-decoration: overline;
+}
+
+.shadow{
+  color: transparent;
+text-shadow: 1px 1px 7px black;
+font-family: 'Rock Salt', cursive;
+font-size: 25px;
+width: 245px;
+position: absolute;
+margin: 143px 41%;
+text-align: center;
+}
+
+.rotator:hover + .shadow{
+  text-decoration: underline;
+  font-size: 26px;
 }

@@ -1,0 +1,31 @@
+.child-container{
+  max-width: 960px;
+}
+
+
+.text-filler{
+  padding: 40px 0;
+
+}
+
+.paralax-pic{
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* has to be background-image, just background won't have capture the above css */
+#pic-1{ background-image: url("http://www.planwallpaper.com/static/images/cool_cat.jpg");
+}
+
+#pic-2{ background-image: url("http://4.bp.blogspot.com/-ea1YNnbKvPQ/UK_hCzojNrI/AAAAAAAAFYE/iZhMSurnZ_U/s1600/El_ojo_Wallpaper__yvt2.jpg");
+}
+#pic-3{ background-image: url("http://www.daniellaondesign.com/uploads/7/3/9/7/7397659/9352264_orig.jpg");
+}
+
+#pic-4{ background-image: url("http://d2vhprqki2fot3.cloudfront.net/experience/wp-content/uploads/2013/11/top-ten-guitar-smashers.jpg");
+}
+
+#pic-5{ background-image: url("http://www.blogto.com/upload/2011/02/201124-graf-brick.jpg");
+}
