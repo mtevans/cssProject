@@ -95,14 +95,14 @@ a{
   height: 100%;
   width: 0%;
   display: flex;
-  postition: relative;
+  position: relative;
   justify-content: center;
   align-items: center;
   color: white;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.7);
   -webkit-transition: width 800ms 500ms;
-  -moz-ransition: width 800ms 500ms;
+  -moz-transition: width 800ms 500ms;
   transition: width 800ms 500ms;
 }
 

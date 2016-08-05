@@ -83,14 +83,12 @@
     border-top: 3px solid white;
   }
 }
+
 .outer:hover > .top{
   -webkit-animation: rotate-top 500ms ease-out forwards;
   -moz-animation: rotate-top 500ms ease-out forwards;
   animation: rotate-top 500ms ease-out forwards;
 }
-
-
-
 
 @-webkit-keyframes rotate-left{
   0%{
