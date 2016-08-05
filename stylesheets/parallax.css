@@ -15,9 +15,9 @@
   background-size: cover;
 }
 /* has to be background-image, just background won't have capture the above css */
-#pic-1{ background-image: url("http://www.planwallpaper.com/static/images/cool_cat.jpg");
-}
-
+/*#pic-1{ background-image: url("http://www.planwallpaper.com/static/images/cool_cat.jpg");
+}*/
+/*
 #pic-2{ background-image: url("http://4.bp.blogspot.com/-ea1YNnbKvPQ/UK_hCzojNrI/AAAAAAAAFYE/iZhMSurnZ_U/s1600/El_ojo_Wallpaper__yvt2.jpg");
 }
 #pic-3{ background-image: url("http://www.daniellaondesign.com/uploads/7/3/9/7/7397659/9352264_orig.jpg");
@@ -27,4 +27,20 @@
 }
 
 #pic-5{ background-image: url("http://www.blogto.com/upload/2011/02/201124-graf-brick.jpg");
+}*/
+
+
+#pic-1{ background-image: url("../images/parallax/cool_cat.jpg");
+}
+
+#pic-2{ background-image: url("../images/parallax/the-eye.jpg");
+}
+
+#pic-3{ background-image: url("../images/parallax/the-beatles.jpg");
+}
+
+#pic-4{ background-image: url("../images/parallax/guitar-smash.jpg");
+}
+
+#pic-5{ background-image: url("../images/parallax/graffiti-smash.jpg");
 }
