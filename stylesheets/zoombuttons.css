@@ -164,8 +164,8 @@
   }
 
   100%{
-    transform: rotateX(33deg) translateZ(-79px);
-    -moz-border-top: 3px solid black;
+    -moz-transform: rotateX(33deg) translateZ(-79px);
+    border-top: 3px solid black;
   }
 }
 

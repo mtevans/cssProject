@@ -14,8 +14,9 @@
   position: relative;
   flex-direction: row;
   margin-left: 110px;
-  transform: rotate(0.1deg);
-  -webkit-transform: rotate(0.1deg);
+  transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
 }
 
 
@@ -34,6 +35,13 @@
   -webkit-transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg);
 }
 
+.album:hover{
+  border: 2px solid white;
+  position: absolute;
+  -webkit-animation: display 1000ms ease-out forwards;
+  -moz-animation: display 1000ms ease-out forwards;
+  animation: display 1000ms ease-out forwards;
+}
 
 @-webkit-keyframes display{
   0%{
@@ -54,6 +62,8 @@
     -webkit-transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateX(5px);
   }
 }
+
+
 
 @-moz-keyframes display{
   0%{
@@ -104,13 +114,7 @@
   opacity: 0.97;
 }
 
-.album:hover{
-  border: 2px solid white;
-  position: absolute;
-  -webkit-animation: display 1000ms ease-out forwards;
-  -moz-animation: display 1000ms ease-out forwards;
-  animation: display 1000ms ease-out forwards;
-}
+
 
 
 .expandingBox {
@@ -172,7 +176,7 @@ img{
   height: 100%;
   width: 0%;
   display: flex;
-  postition: relative;
+  position: relative;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -223,4 +227,44 @@ img{
 .album-image{
   height: 100%;
   width: 100%;
+}
+
+
+ @keyframes safari-display{
+  0%{
+
+    width: 270px;
+    height: 200px;
+    transform: translateX(0px) rotateY(50deg) rotateX(-15deg) rotateZ(-3deg);
+  }
+  30%{
+    z-index: 1;
+    transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg) translateY(-265px);
+  }
+  100%{
+    width: 300px;
+    height: 260px;
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(-265px);
+  }
+}
+
+.album-safari{
+  border-radius: 4px;
+  margin-top: 90px;
+  height: 200px;
+  width: 270px;
+  border: 2px solid black;
+  position: absolute;
+  margin: 0px 0 0 0;
+  z-index: -1;
+  box-shadow: 0 1px 10px 1px black;
+  transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg);
+  -moz-transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg);
+  -webkit-transform: rotateY(50deg) rotateX(-15deg) rotateZ(-3deg);
+}
+
+.album-safari:hover{
+  border: 2px solid white;
+  position: absolute;
+  animation: safari-display 1000ms ease-out forwards;
 }
