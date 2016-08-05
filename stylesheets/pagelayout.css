@@ -436,3 +436,17 @@ text-align: center;
       font-size: 25px;
     }
 }
+
+.underline{
+  height: 50%;
+  width: 56%;
+  text-align: center;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.underline:hover{
+  text-decoration: underline;
+}
