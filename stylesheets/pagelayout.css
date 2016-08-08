@@ -437,7 +437,7 @@ text-align: center;
     }
 }
 
-.underline{
+.to-underline{
   height: 50%;
   width: 56%;
   text-align: center;
@@ -447,6 +447,6 @@ text-align: center;
   align-items: center;
 }
 
-.underline:hover{
+.to-underline:hover{
   text-decoration: underline;
 }
