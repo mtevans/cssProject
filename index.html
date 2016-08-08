@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./stylesheets/zoombuttons.css">
     <link rel="stylesheet" href="./stylesheets/pagelayout.css">
     <link rel="stylesheet" href="./stylesheets/parallax.css">
+    <link rel="stylesheet" href="./stylesheets/sliding-header.css">
+    <link rel="stylesheet" href="./stylesheets/stars.css">
     <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script type="text/javascript" src="./lib/entry.js" charset="utf-8"></script>
@@ -82,12 +84,14 @@
     <div class="sidebar-content">
       <div class="links">
         <h3>Codepen&#x2011;Links</h3>
+            <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/oLdvqA">Sliding&nbsp;Header</a><br>
             <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/ZOoYBW">Album&nbsp;Display</a><br>
+            <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/pbQWwY">Star&nbsp;Rating</a><br>
             <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/mEjQoA">All&nbsp;The&nbsp;Buttons</a><br>
             <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/dXjwyG">Rotating&nbsp;Cube</a><br>
             <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/GqdWKx">Flipboard&nbsp;Photo</a><br>
             <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/XKqrEr">Buzzword&nbsp;Scroll</a><br>
-            <a class="sidebar-links" href="http://codepen.io/StayingAnonymous/pen/NALrJO">Parallax&nbsp;Scrolling</a><br>
+            <a class="sidebar-links" href="https://codepen.io/StayingAnonymous/pen/NALrJO">Parallax&nbsp;Scrolling</a><br>
       </div>
     </div>
   <div class="trigger start-animation">Side-Bar</div>
@@ -126,12 +130,69 @@
         <div class="spacer"><div class="spacer"></div></div>
 
 
+        <h1 class="paint-heading">Sliding Header</h1>
+
+        <div class="floating-header">
+              <div class="navbar">
+                <div class="tab head1">
+                  <p>Example 1</p>
+                </div>
+                <div class="tab head2">
+                  <p>Example 2</p>
+                </div>
+                <div class="tab head3">
+                  <p>Example 3</p>
+                </div>
+                <div class="tab head4">
+                  <p>Example 4</p>
+                </div>
+                <div class="pointer">
+                  <div class="triangle">
+                  </div>
+                  <div class="bar">
+                  </div>
+                </div>
+              </div>
+        </div>
+
         <div id="pic-3" class="parent-container paralax-pic">
           <div class="child-container">
           </div>
         </div>
+        
+  <h1 class="paint-heading">Star Rating</h1>
+
+        <div class="stars">
+        	<div class="star" id="1"></div>
+        	<div class="star" id="2"></div>
+        	<div class="star" id="3"></div>
+        	<div class="star" id="4"></div>
+        	<div class="star" id="5"></div>
+        </div>
+
+        <div id="stars-code" class="open-button">
+          <div class="part2">
+          </div>
+          <div class="part1">
+            <div class="buttons2-code-text theText">View Code</div>
+          </div>
+        </div>
 
 
+        <div id="starsbox" class="stars-code-ex expandingBox">
+        <div class="album-html">
+          <h1 class="code-title">HTML</h1>
+          <img src="./images/stars/stars-html.png" alt="" />
+        </div>
+        <div class="album-css">
+            <h1 class="code-title">CSS</h1>
+          <img src="./images/stars/stars-css.png" alt="" />
+        </div>
+        <div class="album-jQuery">
+            <h1 class="code-title">jQuery</h1>
+          <img src="./images/stars/stars-jquery.png" alt="" />
+        </div>
+        </div>
 
     <a name='Photo-Display'></a>
     <h1 class="paint-heading">Photo Display</h1>
@@ -297,6 +358,11 @@
   <div class="child-container">
   </div>
 </div>
+
+
+
+
+
 
 <a name='Kube'></a>
 <h1 class="paint-heading">The Kübe</h1>
