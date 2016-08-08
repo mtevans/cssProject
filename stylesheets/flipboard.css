@@ -78,13 +78,13 @@
 }
 
 .front{
-  transform: rotateY(0deg) translateZ(2px) rotateX(90deg);
-  -webkit-transform: rotateY(0deg) translateZ(2px) rotateX(90deg);
-  -moz-transform: rotateY(0deg) translateZ(2px) rotateX(90deg);
+  transform: rotateY(0deg) translateZ(0.1px) rotateX(90deg);
+  -webkit-transform: rotateY(0deg) translateZ(0.1px) rotateX(90deg);
+  -moz-transform: rotateY(0deg) translateZ(0.1px) rotateX(90deg);
 }
 
 .back{
-  transform: rotateX(-90deg) translateZ(2px);
-  -webkit-transform: rotateX(-90deg) translateZ(2px);
-  -moz-transform: rotateX(-90deg) translateZ(2px);
+  transform: rotateX(-90deg) translateZ(0.1px);
+  -webkit-transform: rotateX(-90deg) translateZ(0.1px);
+  -moz-transform: rotateX(-90deg) translateZ(0.1px);
 }
